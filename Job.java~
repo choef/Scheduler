@@ -1,0 +1,30 @@
+public class Job{
+
+    public String name;
+    public int timestamp;
+    public int duration;
+    public int priority;
+
+    public Job(){
+
+    }
+
+    public Job(String nm, int ts, int d, int p){
+	name = nm;
+	timestamp = ts;
+	duration = d;
+	priority = p;
+
+    }
+
+    public Job(String nm, int ts, int d){
+	name = nm;
+	timestamp = ts;
+	duration = d;
+
+    }
+
+
+
+
+}

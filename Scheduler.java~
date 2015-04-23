@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+public class Scheduler{
+
+    public String[] processes;
+    FileInputStream jobfile = null;
+    
+
+    public static void main (string [] args){
+	
+	try{
+	    jobfile = new FileInputStream(args[0]);
+	}
+
+
+    }
+
+
+    public static void firstComeFirstServed(){
+
+
+    }
+
+    public String[][] parseFile(FileInputStream x){
+	String[][] jobs  = new String[][];
+	
+	FileReader reader = new FileReader(x);
+	BufferedReader br = new BufferedReader(reader);
+	String line;
+	while((line = br.readLine()) != null){
+	    String[] temp = line.Split(",");
+	    jobs.add(temp);
+
+	}
+	System.out.println(jobs);
+	return jobs;
+	
+	//take in the file, split into lines, put in temp
+	//use temp, split lines into sections, put into jobs. 
+	
+
+    }
+
+
+}
